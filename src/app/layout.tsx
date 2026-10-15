@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Observability } from "@/lib/observability";
 
 // Variable Inter (no fixed weights), so the theme's in-between Medium (560)
 // renders as set.
