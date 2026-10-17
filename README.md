@@ -7,7 +7,19 @@
 
 A generative UI component pipeline built with **OpenUI (@openuidev/cli)**, **Next.js 16**, and **LangChain / LangGraph**.
 
+![Streaming model output resolved into structured interface panels](assets/openui-generative-agent-overview.jpg)
+
 ---
+
+## Why this exists
+
+Generative UI usually breaks in the same two places: the model drifts away from
+the components your app can actually render, and the front end has no schema to
+validate against. This repository keeps one declarative component library as the
+single source of truth, generates a machine-readable spec from it, and feeds that
+spec to the agent at run time. The result is a chat surface that streams a layout
+the renderer is guaranteed to understand, instead of prose that a human has to
+translate into a screen afterwards.
 
 ## Overview
 
